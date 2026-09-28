@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beckett Sanchez's academic website">
+  <title>Beckett Sanchez</title>
+
+  <style>
+    /* Customize colors and page width here. */
+    :root {
+      --background: #ffffff;
+      --text: #252525;
+      --muted: #666666;
+      --link: #285b78;
+      --border: #dddddd;
+      --width: 720px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: var(--width);
+      margin: 0 auto;
+      padding: 60px 24px;
+      background: var(--background);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      font-weight: normal;
+      line-height: 1.3;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 38px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 27px;
+    }
+
+    h3 {
+      font-size: 21px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      color: var(--text);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 4px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .subtitle, nav, footer {
+      font-family: system-ui, sans-serif;
+      font-size: 15px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    section {
+      padding-top: 40px;
+      scroll-margin-top: 24px;
+    }
+
+    li {
+      margin-bottom: 18px;
+    }
+
+    .details {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAME AND NAVIGATION -->
+  <header>
+    <h1>Beckett Sanchez</h1>
+    <p class="subtitle">
+      Department of Mathematics · Brown University
+    </p>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        I am a PhD student in the Department of Mathematics
+        at Brown University. My advisor is Justin Holmer.
+      </p>
+      <p>
+        Add a short introduction about your background
+        and academic interests here.
+      </p>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p>
+        I study partial differential equations arising in
+        fluid dynamics, plasma physics, quantum mechanics,
+        and other wave-like phenomena.
+      </p>
+      <p>
+        Describe your current projects or questions here.
+      </p>
+    </section>
+
+    <!-- PUBLICATIONS: Copy a <li> block to add another paper. -->
+    <section id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <ol>
+        <li>
+          <a href="https://link.springer.com/article/10.1007/s42985-025-00327-0">
+            On the well-posedness of the periodic fractional
+            Schrödinger equation
+          </a>
+          <br>
+          <span class="details">
+            With Oscar Riaño and Svetlana Roudenko
+          </span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:beckett_sanchez@brown.edu">
+          beckett_sanchez@brown.edu
+        </a>
+        <br>
+        Office: Kassar House 020
+      </p>
+    </section>
+  </main>
+
+  <!-- Optional footer: edit or remove. -->
+  <footer>
+    Beckett Sanchez · Brown University
+  </footer>
+</body>
+</html>
